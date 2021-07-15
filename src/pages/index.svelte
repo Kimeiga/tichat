@@ -35,7 +35,11 @@
     >
       {#each users as person}
         {#if person.id !== user.uid}
-          <img src={person.photoURL} alt="user's face idk" />
+          <img
+            src={person.photoURL}
+            alt="user's face idk"
+            style="float: left"
+          />
           <h2>{person.displayName}</h2>
 
           <p>id: {person.id}</p>
@@ -88,6 +92,7 @@
               }
             }}>Chat with this person</button
           >
+          <hr />
         {/if}
       {/each}
     </Collection>
