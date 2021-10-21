@@ -2,7 +2,7 @@
   import { Router } from "@roxi/routify";
   import { routes } from "../.routify/routes";
 
-  import Serviceworker from "./Serviceworker.svelte";
+  // import Serviceworker from "./Serviceworker.svelte";
 
   import { FirebaseApp } from "sveltefire";
   import firebase from "firebase/app";
@@ -33,8 +33,7 @@
   <Router {routes} />
 </FirebaseApp>
 
-<Serviceworker />
-
+<!-- <Serviceworker /> -->
 <style global>
   @import "../assets/global.css";
   @import "firebaseui/dist/firebaseui.css";

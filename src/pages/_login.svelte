@@ -45,7 +45,6 @@
                 clientId:
                   "561811199163-mlumhdkfre3068f2o981lljj5srh9f0h.apps.googleusercontent.com",
               },
-              firebase.auth.EmailAuthProvider.PROVIDER_ID,
             ],
             // Required to enable one-tap sign-up credential helper.
             credentialHelper: firebaseui.auth.CredentialHelper.GOOGLE_YOLO,
