@@ -37,4 +37,5 @@
 
 <style global>
   @import "../assets/global.css";
+  @import "firebaseui/dist/firebaseui.css";
 </style>

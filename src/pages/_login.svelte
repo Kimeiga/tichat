@@ -67,7 +67,3 @@
 </svelte:head>
 
 <div id="firebaseui-auth-container" />
-
-<style>
-  @import "firebaseui/dist/firebaseui.css";
-</style>
