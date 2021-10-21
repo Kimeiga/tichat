@@ -1,7 +1,5 @@
 <script>
-  export let id;
   import { Doc, Collection } from "sveltefire";
-  import { user } from "../example/app/_store";
 
   export let scoped;
   $: ({ user, auth } = scoped);

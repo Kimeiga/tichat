@@ -8,7 +8,7 @@
   const firebase = getContext("firebase").getFirebase();
   const googleProvider = new firebase.auth.GoogleAuthProvider();
 
-  import Login from "_login.svelte";
+  import Login from "./_login.svelte";
 </script>
 
 <User persist={localStorage} let:user let:auth>
