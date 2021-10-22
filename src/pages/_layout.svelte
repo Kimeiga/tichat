@@ -4,11 +4,9 @@
   // import Navbar from "./_navbar.svelte";
   import BottomNav from "./_components/BottomNav.svelte";
 
-  import { getContext, onMount } from "svelte";
+  import { getContext } from "svelte";
   const firebase = getContext("firebase").getFirebase();
   const googleProvider = new firebase.auth.GoogleAuthProvider();
-
-  import Login from "./_login.svelte";
 </script>
 
 <User persist={localStorage} let:user let:auth>
@@ -16,7 +14,10 @@
   <div slot="signed-out">
     <h1>Tichat</h1>
     <hr />
-    <Login />
+
+    <button on:click={() => firebase.auth().signInWithPopup(googleProvider)}
+      >Sign In with Google</button
+    >
   </div>
 
   <main>
