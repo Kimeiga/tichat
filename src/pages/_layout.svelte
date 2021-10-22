@@ -15,7 +15,7 @@
     <h1>Tichat</h1>
     <hr />
 
-    <button on:click={() => firebase.auth().signInWithPopup(googleProvider)}
+    <button on:click={() => auth.signInWithPopup(googleProvider)}
       >Sign In with Google</button
     >
   </div>
